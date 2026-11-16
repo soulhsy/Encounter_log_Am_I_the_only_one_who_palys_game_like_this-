@@ -1,0 +1,52 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", Helvetica, "Apple SD Gothic Neo", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px; color: #111827; background: #f4f4f4; -webkit-font-smoothing: antialiased; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.board { max-width: 896px; margin: 0 auto; background: #fff; border: 1px solid #d1d5db; box-shadow: 0 1px 2px #0000000c; }
+.post-header { padding: 16px 20px; border-bottom: 1px solid #e5e7eb; }
+h1 { margin: 0; color: #374151; font-size: 18px; font-weight: 700; overflow-wrap: anywhere; }
+.post-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 12px; color: #6b7280; font-size: 13px; }
+.post-meta .author { color: #4b5563; font-weight: 600; }
+.separator { color: #d1d5db; }
+.post-body { min-height: 200px; padding: 32px 20px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 15px; line-height: 1.75; color: #374151; }
+.comments-section { border-top: 1px solid #e5e7eb; background: #f9f9f9; }
+.comments-list { padding: 16px 20px; }
+.comment { padding: 0 0 12px; margin-bottom: 12px; border-bottom: 1px solid #e5e7eb; }
+.comment:last-child { margin-bottom: 0; }
+.comment-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+.comment-author-time { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.comment-top strong { color: #374151; font-size: 13px; }
+.comment-top time { color: #9ca3af; font-size: 11px; }
+.comment-text { color: #374151; font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.4; }
+.comment-code { margin-top: 4px; color: #9ca3af; font-size: 11px; }
+.comment-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.comment-actions button { padding: 0; border: 0; background: none; color: #9ca3af; font-size: 11px; }
+.comment-actions button:hover { color: #374151; }
+#dynamic-comments:not(:empty) { padding-top: 12px; border-top: 1px solid #e5e7eb; }
+#dynamic-comments .comment:first-child { margin-top: 0; }
+.status { margin: 8px 0 0; font-size: 12px; color: #6b7280; }
+.status:empty { display: none; }
+.comment-form { padding: 8px 20px 20px; }
+.form-control { display: flex; background: #fff; border: 1px solid #d1d5db; }
+.form-control:focus-within { border-color: #9ca3af; }
+.nickname-wrap { width: 112px; flex-shrink: 0; background: #f9fafb; border-right: 1px solid #e5e7eb; padding: 12px; }
+.nickname-wrap input { width: 100%; background: transparent; outline: none; border: none; color: #374151; font-size: 13px; font-weight: 600; }
+.form-control textarea { width: 100%; padding: 12px; resize: vertical; outline: none; border: none; color: #374151; font-size: 14px; }
+.submit-wrap { display: flex; align-items: flex-end; padding: 8px; }
+.submit-wrap button, .modal-dialog button, .save-edit { border: 0; background: #4a4a4a; color: #fff; padding: 8px 20px; font-size: 13px; white-space: nowrap; }
+.submit-wrap button:hover, .modal-dialog button:hover, .save-edit:hover { background: #333; }
+.edit-input { width: 100%; min-height: 60px; resize: vertical; padding: 8px; border: 1px solid #d1d5db; outline: none; font-size: 14px; }
+.edit-controls { margin: 8px 0; display: flex; justify-content: flex-end; gap: 8px; }
+.edit-controls button { font-size: 12px; padding: 4px 12px; }
+.cancel-edit { border: 1px solid #d1d5db; background: #fff; color: #374151; }
+.modal[hidden] { display: none; }
+.modal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 50; background: #0008; padding: 16px; }
+.modal-dialog { min-width: min(300px, 100%); padding: 24px; text-align: center; background: white; box-shadow: 0 6px 24px #0002; }
+.modal-dialog p { margin: 0 0 24px; color: #374151; font-size: 15px; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { border-radius: 4px; background: #ccc; }
+::-webkit-scrollbar-thumb:hover { background: #bbb; }
+@media (max-width: 640px) { body { padding: 8px; } h1 { font-size: 17px; } .form-control { flex-direction: column; } .nickname-wrap { width: 100%; padding: 10px 12px; border-right: 0; border-bottom: 1px solid #e5e7eb; } .submit-wrap { justify-content: flex-end; } }
