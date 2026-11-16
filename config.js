@@ -4,6 +4,6 @@
  * Supabase Auth에서 Anonymous Sign-Ins를 활성화해야 합니다.
  */
 window.SUPABASE_CONFIG = {
-  url: 'https://asoikcijjwmywgqkkjje.supabase.co/rest/v1/',
+  url: 'https://asoikcijjwmywgqkkjje.supabase.co',
   anonKey: 'sb_publishable_mZo7e9SWBNA6RXtPJzw3cw_LO9Q7v7F'
 };
